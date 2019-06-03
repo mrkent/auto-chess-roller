@@ -1,10 +1,10 @@
 {
-  "name": "auto-chess-units",
+  "name": "auto-chess-roller",
+  "homepage": "https://mrkent.github.io/auto-chess-roller",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "gh-pages": "^2.0.1",
     "holderjs": "^2.9.6",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.8",
@@ -13,6 +13,8 @@
     "underscore": "^1.9.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
