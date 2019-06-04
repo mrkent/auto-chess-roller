@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button, Navbar, Form, InputGroup, FormControl, ButtonToolbar, ButtonGroup } from 'react-bootstrap';
+import unitPool from './data/rules.js'
 
 class Roll extends React.Component {
   constructor(props) {
@@ -52,23 +53,7 @@ class App extends React.Component {
       lastRoll: [],
       currentRoll: [],
       bench: [],
-      pieces: [
-        { name: 'axe', count: 45, cost: 1 },
-        { name: 'enchantress', count: 45, cost: 1 },
-        { name: 'ogremagi', count: 45, cost: 1 },
-        { name: 'crystalmaiden', count: 30, cost: 2 },
-        { name: 'beastmaster', count: 30, cost: 2 },
-        { name: 'juggernaut', count: 30, cost: 2 },
-        { name: 'lycan', count: 25, cost: 3 },
-        { name: 'venomancer', count: 25, cost: 3 },
-        { name: 'omniknight', count: 25, cost: 3 },
-        { name: 'doom', count: 15, cost: 4 },
-        { name: 'kunkka', count: 15, cost: 4 },
-        { name: 'trollwarlord', count: 15, cost: 4 },
-        { name: 'gyrocopter', count: 10, cost: 5 },
-        { name: 'tidehunter', count: 10, cost: 5 },
-        { name: 'enigma', count: 10, cost: 5 },
-      ]
+      pieces: unitPool
     };
 
     this.changeLevel = this.changeLevel.bind(this);
